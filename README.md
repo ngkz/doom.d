@@ -1,2 +1,2 @@
-# doom.d
-journey for discovering best editor
+# DOOM Emacs private module
+my DOOM Emacs config
