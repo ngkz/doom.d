@@ -25,3 +25,6 @@
 ))
 (setq whitespace-space-regexp "\\([\u3000]+\\)") ; highlight only full-width space
 (global-whitespace-mode t)
+
+;turn off auto-fill
+(add-hook 'markdown-mode-hook (lambda () (auto-fill-mode -1)))
