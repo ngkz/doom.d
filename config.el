@@ -28,3 +28,6 @@
 
 ;turn off auto-fill
 (add-hook 'markdown-mode-hook (lambda () (auto-fill-mode -1)))
+
+;soft wrapping
+(global-visual-line-mode t)
