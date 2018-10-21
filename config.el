@@ -7,7 +7,26 @@
       doom-big-font (font-spec :family "NasuM" :size 22))
 (setq doom-one-brighter-comments t)
 (setq-default comment-start "# ")
+
 (setq-default show-trailing-whitespace t)
+
+;; https://qiita.com/tadsan/items/df73c711f921708facdc
+(defun my/disable-trailing-mode-hook ()
+  "Disable show tail whitespace."
+  (setq show-trailing-whitespace nil))
+
+(defvar my/disable-trailing-modes
+  '(comint-mode
+    eshell-mode
+    eww-mode
+    term-mode
+    twittering-mode))
+
+(mapc
+ (lambda (mode)
+   (add-hook (intern (concat (symbol-name mode) "-hook"))
+             'my/disable-trailing-mode-hook))
+ my/disable-trailing-modes)
 
 ; highlight tab, hard space, and full-width space
 (require 'whitespace)
