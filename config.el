@@ -33,6 +33,7 @@
 (global-visual-line-mode t)
 
 ;resize window quickly
+;http://d.hatena.ne.jp/khiker/20100119/window_resize
 (defun my-window-resizer ()
   "Control window size and position."
   (interactive)
