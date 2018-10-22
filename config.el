@@ -100,3 +100,9 @@
 
 (map! :map evil-window-map
       "SPC" #'my-window-resizer) ; CTRL-w SPC or SPC w SPC
+
+;; switch between window with C-hjkl
+(map! :nvi "C-h" #'evil-window-left
+      :nvi "C-j" #'evil-window-down
+      :nvi "C-k" #'evil-window-up
+      :nvi "C-l" #'evil-window-right)
