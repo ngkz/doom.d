@@ -98,5 +98,3 @@
 
 (map! :map evil-window-map
       "SPC" #'my-window-resizer) ; CTRL-w SPC or SPC w SPC
-
-(map! :nvime "C-;" #'avy-goto-char-2)
