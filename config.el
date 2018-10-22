@@ -8,8 +8,10 @@
 (setq doom-one-brighter-comments t)
 (setq-default comment-start "# ")
 
+;; Highlight trailing whitespace
 (setq-default show-trailing-whitespace t)
 
+;; Disable trailing whitespace highlighting when in some modes
 ;; https://qiita.com/tadsan/items/df73c711f921708facdc
 (defun my/disable-trailing-mode-hook ()
   "Disable show tail whitespace."
@@ -28,7 +30,7 @@
              'my/disable-trailing-mode-hook))
  my/disable-trailing-modes)
 
-; highlight tab, hard space, and full-width space
+;; Highlight tab, hard space, and full-width space
 (require 'whitespace)
 (setq whitespace-style '(
     face
@@ -45,14 +47,14 @@
 (setq whitespace-space-regexp "\\([\u3000]+\\)") ; highlight only full-width space
 (global-whitespace-mode t)
 
-;turn off auto-fill
+;; Disable auto-fill-mode when in markdown mode
 (add-hook 'markdown-mode-hook (lambda () (auto-fill-mode -1)))
 
-;soft wrapping
+;; Enable soft wrap
 (global-visual-line-mode t)
 
-;resize window quickly
-;http://d.hatena.ne.jp/khiker/20100119/window_resize
+;; Resize window quickly
+;; http://d.hatena.ne.jp/khiker/20100119/window_resize
 (defun my-window-resizer ()
   "Control window size and position."
   (interactive)
