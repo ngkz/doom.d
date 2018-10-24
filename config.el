@@ -6,6 +6,8 @@
       doom-unicode-font (font-spec :family "NasuM")
       doom-big-font (font-spec :family "NasuM" :size 22))
 (setq doom-one-brighter-comments t)
+;; don't lighten the background of the comment
+(setq doom-one-comment-bg nil)
 (setq-default comment-start "# ")
 
 ;; Highlight trailing whitespace
