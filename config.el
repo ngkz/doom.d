@@ -106,3 +106,8 @@
       :nvi "C-j" #'evil-window-down
       :nvi "C-k" #'evil-window-up
       :nvi "C-l" #'evil-window-right)
+
+;; minimal number of screen lines to keep above and below the cursor
+(setq-default scroll-margin 1)
+;; minimal number of screen columns to keep to the left and to the right of the cursor
+(setq-default hscroll-margin 5)
