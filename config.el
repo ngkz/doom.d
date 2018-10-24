@@ -121,3 +121,8 @@
 
 ;; delete character without yanking
 (map! :n "x" #'delete-char)
+
+;; Don't do square-bracket space-expansion where it doesn't make sense to
+(after! smartparens-text
+  (sp-local-pair 'text-mode
+                 "[" nil :post-handlers '(:rem ("| " "SPC"))))
