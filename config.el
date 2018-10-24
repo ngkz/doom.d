@@ -106,6 +106,11 @@
       :nvi "C-j" #'evil-window-down
       :nvi "C-k" #'evil-window-up
       :nvi "C-l" #'evil-window-right)
+;; move the window with C-S-hjkl
+(map! :nvi "C-S-h" #'+evil/window-move-left
+      :nvi "C-S-j" #'+evil/window-move-down
+      :nvi "C-S-k" #'+evil/window-move-up
+      :nvi "C-S-l" #'+evil/window-move-right)
 
 ;; minimal number of screen lines to keep above and below the cursor
 (setq-default scroll-margin 1)
