@@ -115,7 +115,7 @@
       :nvi "C-S-l" #'+evil/window-move-right)
 
 ;; minimal number of screen lines to keep above and below the cursor
-(setq-default scroll-margin 1)
+(setq-default scroll-margin 3)
 ;; minimal number of screen columns to keep to the left and to the right of the cursor
 (setq-default hscroll-margin 5)
 
