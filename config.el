@@ -129,3 +129,6 @@
 
 ;; Make C-d usable in insert mode
 (map! :i "C-d" #'delete-char)
+
+;; log when a certain todo item was finished
+(setq org-log-done t)
