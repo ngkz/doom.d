@@ -132,3 +132,6 @@
 
 ;; log when a certain todo item was finished
 (setq org-log-done t)
+
+; Make sure that the weekdays in the time stamps of your Org mode files and in the agenda appear in English.
+(setq system-time-locale "C")
