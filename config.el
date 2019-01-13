@@ -1,7 +1,7 @@
 ;;; ~/.doom.d/config.el -*- lexical-binding: t; -*-
 
 ;; Place your private configuration here
-(if (eq (system-name) "haramaki")
+(if (equal (system-name) "haramaki")
     (setq doom-font (font-spec :family "NasuM" :size 20)
           doom-variable-pitch-font (font-spec :family "Nasu")
           doom-unicode-font (font-spec :family "NasuM")
