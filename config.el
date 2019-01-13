@@ -41,17 +41,17 @@
 ;; Highlight tab, hard space, and full-width space
 (require 'whitespace)
 (setq whitespace-style '(
-    face
-    tabs
-    spaces
-    space-mark
-    tab-mark
-))
+                         face
+                         tabs
+                         spaces
+                         space-mark
+                         tab-mark
+                         ))
 (setq whitespace-display-mappings '(
-    (space-mark ?\u3000 [?␣])       ;full-width space AMBIGUOUS WIDTH!
-    (space-mark ?\u00A0 [?\uFF65])   ;hard space
-    (tab-mark   ?\t     [?» ?\t])    ;tab
-))
+                                    (space-mark ?\u3000 [?␣])       ;full-width space AMBIGUOUS WIDTH!
+                                    (space-mark ?\u00A0 [?\uFF65])   ;hard space
+                                    (tab-mark   ?\t     [?» ?\t])    ;tab
+                                    ))
 (setq whitespace-space-regexp "\\([\u3000]+\\)") ; highlight only full-width space
 (global-whitespace-mode t)
 
