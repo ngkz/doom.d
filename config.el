@@ -146,7 +146,5 @@
 ;; Make sure that the weekdays in the time stamps of your Org mode files and in the agenda appear in English.
 (setq system-time-locale "C")
 
-(setq org-agenda-files (list "~/Dropbox2/Dropbox/org/todo.org"))
-
 ;; https://stackoverflow.com/questions/20164918/how-to-untick-checkboxes-in-org-mode-for-the-next-cyclic-repetitive-task
 (require 'org-checklist)
