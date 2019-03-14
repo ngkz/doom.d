@@ -133,6 +133,9 @@
   (sp-local-pair 'text-mode
                  "[" nil :post-handlers '(:rem ("| " "SPC"))))
 
+;; smartparens is more annoying than useful
+(after! smartparens (smartparens-global-mode -1))
+
 ;; Make C-d usable in insert mode
 (map! :i "C-d" #'delete-char)
 
